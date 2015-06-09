@@ -23,5 +23,14 @@ $ docker run -d -p 8080:3000 <image-uuid>
 
 where 3000 is the port that your application listens on. Open your browser at `http://<docker-host>:8080` to see if it worked.
 
-## Building and Pushing your Docker Image to a Registry
+## Building and Pushing your Docker Image to the Registry
 
+1. Add `:uberimage {:tag "registry.giantswarm.io/<username>/<repo>:<tag>"}` to your project's `project.clj`.
+2. Run `lein uberimage`.
+3. Run `docker push registry.giantswarm.io/<username>/<repo>:<tag>`.
+
+## Running your Application on the Swarm
+
+1. Create a simple `swarm.json` using the image you pushed above.
+EMBED JSON
+2. Run `swarm up`.
