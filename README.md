@@ -13,7 +13,7 @@ A minimal `~/.lein/profiles.clj` should look like:
 {:user {:plugins [[com.palletops/uberimage "0.4.1"]]}}
 `
 
-## Building your Docker Image
+## Building your Docker Image for Local Testing
 
 Open the project root and run `lein uberimage`. You will get back an image uuid. You can test the image locally with
 
@@ -22,3 +22,6 @@ $ docker run -d -p 8080:3000 <image-uuid>
 ```
 
 where 3000 is the port that your application listens on. Open your browser at `http://<docker-host>:8080` to see if it worked.
+
+## Building and Pushing your Docker Image to a Registry
+
