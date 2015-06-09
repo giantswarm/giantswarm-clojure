@@ -12,6 +12,7 @@ A minimal `~/.lein/profiles.clj` should look like:
 `
 {:user {:plugins [[com.palletops/uberimage "0.4.1"]]}}
 `
+For more information check out the [`lein-uberimage` GitHub repo](https://github.com/palletops/lein-uberimage).
 
 ## Building your Docker Image for Local Testing
 
