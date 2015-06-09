@@ -17,7 +17,7 @@ A minimal `~/.lein/profiles.clj` should look like:
 
 Open the project root and run `lein uberimage`. You will get back an image uuid. You can test the image locally with
 
-```no highlight
+```nohighlight
 $ docker run -d -p 8080:3000 <image-uuid>
 ```
 
@@ -31,6 +31,5 @@ where 3000 is the port that your application listens on. Open your browser at `h
 
 ## Running your Application on the Swarm
 
-1. Create a simple `swarm.json` using the image you pushed above.
-EMBED JSON
+1. Create a simple [`swarm.json`](giantswarm-clojure/swarm.json) using the image you pushed above. 
 2. Run `swarm up`.
