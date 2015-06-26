@@ -1,0 +1,16 @@
+{
+    "app_name": "clojure-test",
+    "services": [
+        {
+            "service_name": "clojure-test",
+            "components": [
+                {
+                    "component_name": "clojure-test",
+                    "image": "registry.giantswarm.io/puja/clojure-test:1.0",
+                    "ports": [ 8080 ],
+                    "domains": { "clojure-puja.gigantic.io": 8080 }
+                }
+            ]
+        }
+    ]
+}
