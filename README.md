@@ -13,9 +13,11 @@ If you don't have an own Clojure project, yet, clone this [helloworld repo](http
 
 Put `[com.palletops/uberimage "0.4.1"]` into the `:plugins` vector of your `:user` profile.
 A minimal `~/.lein/profiles.clj` should look like:
-`
+
+```
 {:user {:plugins [[com.palletops/uberimage "0.4.1"]]}}
-`
+```
+
 For more information check out the [`lein-uberimage` GitHub repo](https://github.com/palletops/lein-uberimage).
 
 Open the project root and run `lein uberimage`. You will get back an image uuid. You can test the image locally with
