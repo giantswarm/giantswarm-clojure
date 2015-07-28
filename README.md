@@ -1,5 +1,11 @@
 # Clojure Apps on Giant Swarm
 
+This is a simple example of deploying Clojure applications with Docker on [Giant Swarm](https://giantswarm.io/).
+
+Check out the full guide here:
+
+https://blog.giantswarm.io/deploy-clojure-application-in-1-minute/
+
 ## Prerequisites 
 
 * A [Giant Swarm account](https://giantswarm.io/request-invite/)
